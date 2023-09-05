@@ -1,10 +1,21 @@
 
 // la verdad que esto es un modelo provisorio, mas que nada para demostrar lo aprendido
 
+// function saludar(){
+//     alert("¡Bienvenido al Quiz de la Scaloneta!");
+// }
 
+function saludarODespedir(esSaludo) {
+    if (esSaludo) {
+        alert("¡Bienvenido al Quiz de la Scaloneta!");
+    } else {
+      alert("Espero que hayas disfrutado de este cuestionario tanto como yo desarrollarlo, nos vemos pronto en otras ediciones!!! ");
+    }
+  }
+
+saludarODespedir(true);
 let nombre = prompt ("Ingrese su nombre de usuario.");
-let edad = prompt ("Ingrese su edad.");
-alert ("Te damos la bienvenida "  + nombre +  ",en este test veremos que tanto sabes de la seleccion Argentina de futbol!!")
+alert ("Te damos la bienvenida "  + nombre +  ",en este test veremos que tanto sabes de la seleccion Argentina de futbol!!");
 
 const si = "si";
 const no = "no";
@@ -18,8 +29,8 @@ if(comenzar == si){
         };
 
 const opcionA = "Lionel";
-const opcionB = "Andres"
-const opcionC = "Luis"
+const opcionB = "Andres";
+const opcionC = "Luis";
 
 let correctas = 0
 let primerPregunta = prompt ("Primera pregunta, cual es el Primer nombre de Messi? \
@@ -34,11 +45,14 @@ if( primerPregunta == opcionA){
 alert("mmmmmm no crack, sos Frances?")
 }
 
-const respuesta1 = "3"
-const respuesta2 = "2"
-const repsuesta3 = "4"
+const respuesta1 = "3";
+const respuesta2 = "2";
+const repsuesta3 = "4";
 
-let segundaPregunta = prompt ("Segunda pregunta, cuantas copas del mundo gano Argentina?")
+let segundaPregunta = prompt ("Segunda pregunta, cuantas copas del mundo gano Argentina? \
+-2\
+-3\
+-4");
 if(segundaPregunta==respuesta1){
     correctas++
     alert("muchaaaachooooosss, la respuesta es correctaaaaaa")
@@ -46,9 +60,9 @@ if(segundaPregunta==respuesta1){
     alert("nop, creo que te equivocaste de pais:/")
 }
 
-const respuestaA = "5"
-const respuestaB = "4"
-const respuestaC = "6"
+const respuestaA = "5";
+const respuestaB = "4";
+const respuestaC = "6";
 
 let tercerPregunta = prompt("Tercera pregunta, cuantos mundiales jugo Lionel Messi?\
 -4 \
@@ -62,9 +76,9 @@ if(tercerPregunta==respuestaA){
     alert("mmmmm no, creo que deberias revisar el historial.")
 }
 
-const opcion1 = "23"
-const opcion2 = "1"
-const opcion3 = "12"
+const opcion1 = "23";
+const opcion2 = "1";
+const opcion3 = "12";
 
 let cuartaPregunta = prompt("Cuarta pregunta, que dorsal utiliza Damian Emiliano Martinez en la seleccion Argentina?\
 -23 \
@@ -78,9 +92,9 @@ if(cuartaPregunta==opcion1){
     alert("nope, lo siento pero esa no es la respuesta correcta.")
 }
 
-const rta1 = "Angel Di Maria"
-const rta2= "Lautaro Martinez"
-const rta3="Julian Alvarez"
+const rta1 = "Angel Di Maria";
+const rta2= "Lautaro Martinez";
+const rta3="Julian Alvarez";
 
 let quintaPregunta = prompt("Quinta pregunta, cual de los siguientes jugadores anoto un gol en TODAS las finales que disputo la Scaloneta?\
 -Lautaro Martinez\
@@ -92,10 +106,10 @@ if(quintaPregunta==rta1){
     alert("Correctooo, Angel Di Maria es el señor de las finales.")
 }else{
     alert("La respuesta es incorrecta, creo que te perdiste algun golcito.")    
-}
+};
 
-const opt1 ="10"
-const otp2= "1"
+const opt1 ="10";
+const otp2= "1";
 
 let preguntaExtra = prompt ("Ahora, una pregunta de opinion personal, del 1 al 10, ¿que tanto te gusta Scaloni como DT?")
 
@@ -105,8 +119,10 @@ if(preguntaExtra > 9){
     alert("no lo se rick, parece falso")
 }else{
     alert("Capo, Sos Frances?")
-}
+};
 
 
 console.log("Bueno "+ nombre + " haz llegado al final del quiz, felicitaciones!!, haz acertado " + correctas + " de 5 preguntas que se evaluaban.")
 console.log("tu nota final es " + correctas * 2)
+
+saludarODespedir(false)
