@@ -7,27 +7,19 @@
 </head>
 <body>
 <main>
-<h1>¿Que tanto sabes sobre la Scaloneta?</h1>
+    <h1>¡Bienvenido al Quiz de la Scaloneta!</h1>
+    <p>Ingresa tu nombre de usuario: <input type="text" id="nombre"></p>
+    <button onclick="iniciarQuiz()">Iniciar el cuestionario</button>
+    <div id="preguntas" style="display: none;">
+        <p id="mensaje"></p>
+        <button onclick="responder(1)">Opción 1</button>
+        <button onclick="responder(2)">Opción 2</button>
+        <button onclick="responder(3)">Opción 3</button>
+    </div>
+    <p id="resultado" style="display: none;"></p>
 
 <img src="./assets/img/scaloneta.jpg" alt="Equipo de futbol">
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eius sequi ab alias laudantium repellendus id nulla dicta dolorem, obcaecati corrupti, autem modi quia vel nesciunt, enim voluptate maxime iusto?
-Reiciendis fugit ex quam reprehenderit saepe vero, officiis officia, quidem aut delectus non at vel mollitia vitae esse quibusdam hic veniam. Debitis, blanditiis id facere nisi sit eius error aperiam!</p>
-
-
-
-
-
-
 </main>
-
-
-
-
-
-
-
-
 <script src="index.js"></script>
 </body>
 </html>

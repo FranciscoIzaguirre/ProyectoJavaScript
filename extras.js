@@ -1,79 +1,79 @@
-// const opcionA = "1";
-// const opcionB = "2";
-// const opcionC = "3";
+// alert("¡Bienvenido al Quiz de la Scaloneta!");
 
-// let correctas = 0
+// let nombre = prompt ("Ingrese su nombre de usuario.");
 
-// let pregunta1 = prompt(preguntas.primerPregunta);
+// while(nombre == "" || nombre == " "){
+//     nombre = prompt("Porfavor, ingrese su nombre de usuario para continuar.")
+//   }
 
-// if( pregunta1  == opcionA){
-//     correctas++
-//    alert  ("Es correcto, nuestro gran 10 se llama Lionel Andres Messi Cuccittini")
-// }else{
-//     respuestaIncorrecta()
+// alert ("Te damos la bienvenida "  + nombre +  ",en este test veremos que tanto sabes de la seleccion Argentina de futbol!!");
+
+// const si = "si";
+// const no = "no";
+
+// let comenzar = prompt ("¿Estas listo?");
+
+// if(comenzar == si){
+//          alert ("Genial, vamos a ver que tan argento sos!") 
+//         }if(comenzar == no){
+//          alert ("Que pena, bueno, nos veremos la proxima :/")
+//         };       
+
+// alert("Antes de comenzar con el cuestionario, te recordamos que las respuestas se van a contar siempre y cuando respondas con el numero de opcion(1,2 o 3), dicho esto, mucha suerte!!!")
+
+
+// class Pregunta {
+//     constructor(pregunta, opt1, opt2, opt3, correcta) {
+//         this.pregunta = pregunta;
+//         this.respuestas = [opt1, opt2, opt3];
+//         this.correcta = correcta;
+//     }
 // }
 
-// const respuesta2 = "1";
-// const respuesta1 = "2";
-// const repsuesta3 = "3";
+// let preguntas = [];
 
-// let pregunta2 = prompt(preguntas.segundaPregunta);
+// preguntas.push(new Pregunta ("Primera pregunta, cual es el Primer nombre de Messi?", "Lionel" ,"Andres", "Luis", 1))
+// preguntas.push(new Pregunta ("Segunda pregunta, cuantas copas del mundo gano Argentina?","2", "3", "4", 2))
+// preguntas.push(new Pregunta ("Tercera pregunta, cuantos mundiales jugo Lionel Messi?", "4" ,"5", "6", 2))
+// preguntas.push(new Pregunta ("Cuarta pregunta, que dorsal utiliza Damian Emiliano Martinez en la seleccion Argentina?", "23" ,"1", "12", 1))
+// preguntas.push(new Pregunta ("Quinta pregunta, cual de los siguientes jugadores anoto un gol en TODAS las finales que disputo la Scaloneta?", "Lautaro Martinez" ,"Julian Alvarez", "Angel Di Maria", 3))
 
-// if(pregunta2==respuesta1){
-//     correctas++
-//     alert("muchaaaachooooosss, la respuesta es correctaaaaaa")
-// }else{
-//     respuestaIncorrecta()
+// function respuestaIncorrecta(){
+//     alert("mmmmm no crack, sos Frances?")
 // }
+// let correctas = 0;
 
-// const respuestaA = "2";
-// const respuestaB = "1";
-// const respuestaC = "3";
+//     preguntas.forEach((pregunta, index) => {
+//         const respuestaUsuario = prompt(
+//           pregunta.pregunta +
+//             "\nOpciones:\n1. " +
+//             pregunta.respuestas[0] +
+//             "\n2. " +
+//             pregunta.respuestas[1] +
+//             "\n3. " +
+//             pregunta.respuestas[2]
+//         );
+      
+//         if (respuestaUsuario === pregunta.correcta.toString()) {
+//           correctas++;
+//           alert("Muchaachooosss, Respuesta Correcta!!");
+//         } else {
+//           respuestaIncorrecta();
+//         }
+//       });
 
-// let pregunta3 = prompt(preguntas.tercerPregunta)
+// let preguntaExtra = prompt ("Ahora, una pregunta de opinion personal, del 1 al 10, ¿que tanto te gusta Scaloni como DT?")
 
-// if(pregunta3==respuestaA){
-//     correctas++
-//     alert("Correctooooo, Lionel Messi disputo 5 mundiales vistiendo la celeste y blanca.")
-// }else{
-//     respuestaIncorrecta()
-// }
-
-// const opcion1 = "1";
-// const opcion2 = "2";
-// const opcion3 = "3";
-
-// let pregunta4 = prompt(preguntas.cuartaPregunta)
-
-// if(pregunta4==opcion1){
-//     correctas++
-//     alert("La respuesta es CORRECTA, Emiliano «Dibu» Martinez usa el dorsal 23 con nuestra seleccion.")
-// }else{
-//     respuestaIncorrecta()
-// }
-
-// const rta1 = "3";
-// const rta2= "1";
-// const rta3="2";
-
-// let pregunta5 = prompt(preguntas.quintaPregunta)
-
-// if(pregunta5==rta1){
-//     correctas++
-//     alert("Correctooo, Angel Di Maria es el señor de las finales.")
-// }else{
-//     respuestaIncorrecta()
-// };
-
-// const opt1 ="10";
-// const otp2= "1";
-
-// let pregunta6 = prompt (preguntas.preguntaExtra)
-
-// if(pregunta6 > 9){
+// if(preguntaExtra > 9){
 //    alert("Amamos a Scaloni <3")
-// }else if(pregunta6 > 5 && pregunta6 < 10){
+// }else if(preguntaExtra > 5 && preguntaExtra< 10){
 //     alert("no lo se rick, parece falso")
 // }else{
 //     respuestaIncorrecta()
 // };
+
+
+// alert("Bueno "+ nombre + " haz llegado al final del quiz, felicitaciones!!, haz acertado " + correctas + " de 5 preguntas que se evaluaban.")
+// alert("Tu nota final es " + correctas * 2)
+
+// alert("Espero que hayas disfrutado de este cuestionario tanto como yo desarrollarlo, nos vemos pronto en otras ediciones!!! ");
