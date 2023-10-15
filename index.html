@@ -6,20 +6,25 @@
     <title>Test Scaloneta</title>
 </head>
 <body>
-<main>
+
     <h1>¡Bienvenido al Quiz de la Scaloneta!</h1>
     <p>Ingresa tu nombre de usuario: <input type="text" id="nombre"></p>
-    <button onclick="iniciarQuiz()">Iniciar el cuestionario</button>
+    <button onclick="iniciarQuiz()" id="btnInicio">Iniciar el cuestionario</button>
     <div id="preguntas" style="display: none;">
         <p id="mensaje"></p>
-        <button onclick="responder(1)">Opción 1</button>
-        <button onclick="responder(2)">Opción 2</button>
-        <button onclick="responder(3)">Opción 3</button>
+        <button onclick="responder(1)"></button>
+        <button onclick="responder(2)"></button>
+        <button onclick="responder(3)"></button>
     </div>
     <p id="resultado" style="display: none;"></p>
+    <div>
+        <button  onclick="reiniciarCuestionario()" id="reiniciar">Reiniciar Cuestionario</button>  
+    </div>
+    
+    <img src="./assets/img/scaloneta.jpg" width="1850" height="800" alt="Equipo de futbol">
 
-<img src="./assets/img/scaloneta.jpg" alt="Equipo de futbol">
-</main>
+
+
 <script src="index.js"></script>
 </body>
 </html>
