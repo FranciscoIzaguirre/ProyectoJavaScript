@@ -11,7 +11,7 @@ btnInicio.addEventListener("click", iniciarQuiz);
 opcionesButtons.forEach((button, index) => {
     button.addEventListener("click", () => {
         const opcion = button.getAttribute("data-opcion");
-        responder(parseInt(opcion)); 
+        responder(parseInt(opcion));
     });
 });
 
@@ -20,6 +20,7 @@ reiniciarButton.addEventListener("click", reiniciarCuestionario);
 let nombre = "";
 let preguntaActual = 0;
 let respuestasCorrectas = 0;
+
 
 let boton = document.getElementById("btnInicio")
 boton.addEventListener("click", respuestaClick)
@@ -47,13 +48,13 @@ function iniciarQuiz() {
     }
 
     fetch("preguntas.json")
-    .then((response) => response.json())
-    .then((data) => {
-        localStorage.setItem("preguntas", JSON.stringify(data));
-    })
-    .catch((error) => {
-        console.error("Error al obtener las preguntas:", error);
-    });
+        .then((response) => response.json())
+        .then((data) => {
+            localStorage.setItem("preguntas", JSON.stringify(data));
+        })
+        .catch((error) => {
+            console.error("Error al obtener las preguntas:", error);
+        });
 }
 
 function mostrarSiguientePregunta() {
@@ -72,17 +73,17 @@ function mostrarSiguientePregunta() {
 }
 
 function responder(opcion) {
-    if (opcion === respuestas[preguntaActual]) {
+    if (opcion === preguntas[preguntaActual]) {
         respuestasCorrectas++;
         Swal.fire({
             title: "Respuesta Correcta",
-            text: "MUCHAAACHOOOSSS!!!",
+            text: "¡MUCHAAACHOOOSSS!",
             icon: "success",
         });
     } else {
         Swal.fire({
             title: "Respuesta Incorrecta",
-            text: "mmm, sos Frances?",
+            text: "Mmm, ¿sos Francés?",
             icon: "error",
         });
     }
@@ -91,17 +92,18 @@ function responder(opcion) {
     mostrarSiguientePregunta();
 }
 
+
 function mostrarResultado() {
     preguntasDiv.style.display = "none";
     resultadoP.style.display = "block";
-    resultadoP.textContent = "Felicitaciones, " + nombre + ", haz acertado " + respuestasCorrectas + " de " + preguntas.length + " preguntas.";
+    resultadoP.textContent = "Felicitaciones, " + nombre + ", haz acertado " + respuestasCorrectas + " de " + preguntasDiv.length + " preguntas.";
 }
 
 function reiniciarCuestionario() {
     nombre = "";
     preguntaActual = 0;
     respuestasCorrectas = 0;
-    
+
     reiniciarButton.style.display = "none";
     nombreInput.style.display = "block";
     preguntasDiv.style.display = "none";
