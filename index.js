@@ -73,7 +73,9 @@ function mostrarSiguientePregunta() {
 }
 
 function responder(opcion) {
-    if (opcion === preguntas[preguntaActual]) {
+    const preguntas = JSON.parse(localStorage.getItem("preguntas"));
+
+    if (opcion === preguntas[preguntaActual].correcta) {
         respuestasCorrectas++;
         Swal.fire({
             title: "Respuesta Correcta",
@@ -93,10 +95,11 @@ function responder(opcion) {
 }
 
 
+
 function mostrarResultado() {
     preguntasDiv.style.display = "none";
     resultadoP.style.display = "block";
-    resultadoP.textContent = "Felicitaciones, " + nombre + ", haz acertado " + respuestasCorrectas + " de " + preguntasDiv.length + " preguntas.";
+    resultadoP.textContent = "Felicitaciones, " + nombre + ", haz acertado " + respuestasCorrectas + " de 10 preguntas.";
 }
 
 function reiniciarCuestionario() {

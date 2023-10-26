@@ -2,47 +2,47 @@
     {
       "pregunta": "Primera pregunta, cual es el Primer nombre de Messi?",
       "opciones": ["Lionel", "Andres", "Luis"],
-      "correcta": 0
+      "correcta": 1
     },
     {
       "pregunta": "Segunda pregunta, cuantas copas del mundo gano Argentina?",
       "opciones": ["2", "3", "4"],
-      "correcta": 1
+      "correcta": 2
     },
     {
       "pregunta": "Tercera pregunta, cuantos mundiales jugo Lionel Messi?",
       "opciones": ["4", "5", "6"],
-      "correcta": 1
+      "correcta": 2
     },
     {
         "pregunta": "Cuarta pregunta, que dorsal utiliza Damian Emiliano Martinez en la seleccion Argentina?",
       "opciones": ["23", "1", "12"],
-      "correcta": 0
+      "correcta": 1
     },
     {
         "pregunta": "Quinta pregunta, cual de los siguientes jugadores anoto un gol en TODAS las finales que disputo la Scaloneta?",
         "opciones": ["Lautaro Martinez", "Julian Alvarez", "Angel Di Maria"],
-        "correcta": 2
+        "correcta": 3
       },
       {
         "pregunta": "Sexta pregunta, Cual fue el mayor numero de partidos invictos que mantuvo el conjunto de Scaloni?",
         "opciones": ["30", "36", "40"],
-        "correcta": 1
+        "correcta": 2
       },
       {
         "pregunta": "Septima pregunta, a que pais le gano Argentina en la final de la copa America?",
         "opciones": ["Brasil", "Uruguay", "Venezuela"],
-        "correcta": 0
+        "correcta": 1
       },
       {
         "pregunta": "Octava pregunta, Quien es el maximo goleador de la Era Scaloni?",
         "opciones": ["Lionel Messi", "Lautaro Martinez", "Angel Di Maria"],
-        "correcta": 0
+        "correcta": 1
       },
       {
         "pregunta": "Novena pregunta, Cuantos titulos tiene Lionel Messi con la Celeste y blanca?",
         "opciones": ["3", "6", "5"],
-        "correcta": 2
+        "correcta": 3
       },
       {
         "pregunta": "Decima pregunta, esta es para verdaderos aficionados, Ante el partido de eliminatorias contra Paraguay, Emiliano Martinez rompio un record, El arquero del combinado nacional se convirtió en el Arquero con mayor tiempo sin que le conviertan goles, cuanto tiempo fue?",
